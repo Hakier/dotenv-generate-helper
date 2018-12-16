@@ -1,0 +1,52 @@
+{
+  "name": "dotenv-generate-helper",
+  "version": "1.0.0",
+  "description": "A helper created to generate .env file of accessed ENV variables with its values.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "console": "node app/console",
+    "cli": "node app/console",
+    "api": "nodemon src/api",
+    "lint": "tslint --project tsconfig.json",
+    "removeDist": "rm -rf dist",
+    "compile": "npm run removeDist && tsc -p tsconfig.json",
+    "test": "jest",
+    "testing": "jest --watch",
+    "check": "npm i && npm run compile && npm run lint && npm run test && npm outdated",
+    "release": "npm run check && npm publish"
+  },
+  "bin": {
+    "collect-env-used-in-file": "dist/bin/collect-env-used-in-file.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hakier/dotenv-generate-helper.git"
+  },
+  "readmeFilename": "README.md",
+  "keywords": [
+    "env",
+    "environment",
+    "dot-env"
+  ],
+  "author": "hakier <hakier29a@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^6.2.0"
+  },
+  "devDependencies": {
+    "@types/chance": "^1.0.1",
+    "@types/dotenv": "^6.1.0",
+    "@types/jest": "^23.3.10",
+    "@types/lodash": "^4.14.119",
+    "chance": "^1.0.18",
+    "jest": "^23.6.0",
+    "lodash": "^4.17.11",
+    "tslint": "^5.11.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "typescript": "^3.2.2"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  }
+}
