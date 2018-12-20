@@ -1,6 +1,6 @@
 {
   "name": "dotenv-generate-helper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A helper created to generate .env file of accessed ENV variables with its values.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -42,7 +42,7 @@
     "chance": "^1.0.18",
     "jest": "^23.6.0",
     "lodash": "^4.17.11",
-    "tslint": "^5.11.0",
+    "tslint": "^5.12.0",
     "tslint-eslint-rules": "^5.4.0",
     "typescript": "^3.2.2"
   },
